@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B068E9329B9445D001F7625 /* tvosEPGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B068E9229B9445D001F7625 /* tvosEPGApp.swift */; };
+		5B068E9529B9445D001F7625 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B068E9429B9445D001F7625 /* ContentView.swift */; };
+		5B068E9729B9445E001F7625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B068E9629B9445E001F7625 /* Assets.xcassets */; };
+		5B068E9A29B9445E001F7625 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B068E9929B9445E001F7625 /* Preview Assets.xcassets */; };
+		5B90F9E229BFB51200060308 /* Extension+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90F9E129BFB51200060308 /* Extension+CGFloat.swift */; };
+		5B90F9E429BFB56900060308 /* Extension+CGSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B90F9E329BFB56900060308 /* Extension+CGSize.swift */; };
+		5B92D76C29BD14D90060BF8E /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92D76B29BD14D90060BF8E /* Extension+Date.swift */; };
+		5B92D76E29BE395D0060BF8E /* Extension+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92D76D29BE395D0060BF8E /* Extension+Int.swift */; };
+		5BB0DABE29BBB0E00043E679 /* EPGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DABD29BBB0E00043E679 /* EPGView.swift */; };
+		5BB0DAC029BBB0ED0043E679 /* EPGViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DABF29BBB0ED0043E679 /* EPGViewModel.swift */; };
+		5BB0DAC229BBB10C0043E679 /* EPGConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DAC129BBB10C0043E679 /* EPGConfigurator.swift */; };
+		5BB0DAC729BBB26B0043E679 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DAC629BBB26B0043E679 /* Channel.swift */; };
+		5BB0DAC929BBB2A60043E679 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DAC829BBB2A60043E679 /* Program.swift */; };
+		5BB0DACF29BBDD080043E679 /* FocusModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DACE29BBDD080043E679 /* FocusModifier.swift */; };
+		5BB0DAD129BBDE550043E679 /* ProgramModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0DAD029BBDE550043E679 /* ProgramModifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B068E8F29B9445D001F7625 /* tvosEPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvosEPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B068E9229B9445D001F7625 /* tvosEPGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvosEPGApp.swift; sourceTree = "<group>"; };
+		5B068E9429B9445D001F7625 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B068E9629B9445E001F7625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B068E9929B9445E001F7625 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5B90F9E129BFB51200060308 /* Extension+CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGFloat.swift"; sourceTree = "<group>"; };
+		5B90F9E329BFB56900060308 /* Extension+CGSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+CGSize.swift"; sourceTree = "<group>"; };
+		5B92D76B29BD14D90060BF8E /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		5B92D76D29BE395D0060BF8E /* Extension+Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Int.swift"; sourceTree = "<group>"; };
+		5BB0DABD29BBB0E00043E679 /* EPGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGView.swift; sourceTree = "<group>"; };
+		5BB0DABF29BBB0ED0043E679 /* EPGViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGViewModel.swift; sourceTree = "<group>"; };
+		5BB0DAC129BBB10C0043E679 /* EPGConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGConfigurator.swift; sourceTree = "<group>"; };
+		5BB0DAC629BBB26B0043E679 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		5BB0DAC829BBB2A60043E679 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		5BB0DACE29BBDD080043E679 /* FocusModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusModifier.swift; sourceTree = "<group>"; };
+		5BB0DAD029BBDE550043E679 /* ProgramModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramModifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B068E8C29B9445D001F7625 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B068E8629B9445D001F7625 = {
+			isa = PBXGroup;
+			children = (
+				5B068E9129B9445D001F7625 /* tvosEPG */,
+				5B068E9029B9445D001F7625 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B068E9029B9445D001F7625 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B068E8F29B9445D001F7625 /* tvosEPG.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B068E9129B9445D001F7625 /* tvosEPG */ = {
+			isa = PBXGroup;
+			children = (
+				5B92D76929BD14B60060BF8E /* Core */,
+				5BB0DAC329BBB2220043E679 /* BusinessLogic */,
+				5B068EA029B94498001F7625 /* Presentation */,
+				5B068E9229B9445D001F7625 /* tvosEPGApp.swift */,
+				5B068E9629B9445E001F7625 /* Assets.xcassets */,
+				5B068E9829B9445E001F7625 /* Preview Content */,
+			);
+			path = tvosEPG;
+			sourceTree = "<group>";
+		};
+		5B068E9829B9445E001F7625 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5B068E9929B9445E001F7625 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5B068EA029B94498001F7625 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5BB0DACB29BBDCCD0043E679 /* Common */,
+				5BB0DABC29BBB0CC0043E679 /* EPG */,
+				5B068EA829B94656001F7625 /* Example */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5B068EA829B94656001F7625 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				5B068E9429B9445D001F7625 /* ContentView.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		5B92D76929BD14B60060BF8E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5B92D76A29BD14BF0060BF8E /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5B92D76A29BD14BF0060BF8E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B92D76B29BD14D90060BF8E /* Extension+Date.swift */,
+				5B92D76D29BE395D0060BF8E /* Extension+Int.swift */,
+				5B90F9E129BFB51200060308 /* Extension+CGFloat.swift */,
+				5B90F9E329BFB56900060308 /* Extension+CGSize.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5BB0DABC29BBB0CC0043E679 /* EPG */ = {
+			isa = PBXGroup;
+			children = (
+				5BB0DABD29BBB0E00043E679 /* EPGView.swift */,
+				5BB0DABF29BBB0ED0043E679 /* EPGViewModel.swift */,
+				5BB0DAC129BBB10C0043E679 /* EPGConfigurator.swift */,
+			);
+			path = EPG;
+			sourceTree = "<group>";
+		};
+		5BB0DAC329BBB2220043E679 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				5BB0DACA29BBB3E40043E679 /* Mocks */,
+				5BB0DAC429BBB2340043E679 /* Models */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		5BB0DAC429BBB2340043E679 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BB0DAC529BBB24A0043E679 /* EPG */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BB0DAC529BBB24A0043E679 /* EPG */ = {
+			isa = PBXGroup;
+			children = (
+				5BB0DAC629BBB26B0043E679 /* Channel.swift */,
+				5BB0DAC829BBB2A60043E679 /* Program.swift */,
+			);
+			path = EPG;
+			sourceTree = "<group>";
+		};
+		5BB0DACA29BBB3E40043E679 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5BB0DACB29BBDCCD0043E679 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5BB0DACD29BBDCF00043E679 /* Modifiers */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5BB0DACD29BBDCF00043E679 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				5BB0DACE29BBDD080043E679 /* FocusModifier.swift */,
+				5BB0DAD029BBDE550043E679 /* ProgramModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B068E8E29B9445D001F7625 /* tvosEPG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B068E9D29B9445E001F7625 /* Build configuration list for PBXNativeTarget "tvosEPG" */;
+			buildPhases = (
+				5B068E8B29B9445D001F7625 /* Sources */,
+				5B068E8C29B9445D001F7625 /* Frameworks */,
+				5B068E8D29B9445D001F7625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvosEPG;
+			productName = tvsandbox;
+			productReference = 5B068E8F29B9445D001F7625 /* tvosEPG.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B068E8729B9445D001F7625 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					5B068E8E29B9445D001F7625 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 5B068E8A29B9445D001F7625 /* Build configuration list for PBXProject "tvosEPG" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B068E8629B9445D001F7625;
+			productRefGroup = 5B068E9029B9445D001F7625 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B068E8E29B9445D001F7625 /* tvosEPG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B068E8D29B9445D001F7625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B068E9A29B9445E001F7625 /* Preview Assets.xcassets in Resources */,
+				5B068E9729B9445E001F7625 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B068E8B29B9445D001F7625 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B92D76E29BE395D0060BF8E /* Extension+Int.swift in Sources */,
+				5B90F9E429BFB56900060308 /* Extension+CGSize.swift in Sources */,
+				5BB0DAD129BBDE550043E679 /* ProgramModifier.swift in Sources */,
+				5BB0DACF29BBDD080043E679 /* FocusModifier.swift in Sources */,
+				5B068E9529B9445D001F7625 /* ContentView.swift in Sources */,
+				5BB0DAC729BBB26B0043E679 /* Channel.swift in Sources */,
+				5BB0DAC029BBB0ED0043E679 /* EPGViewModel.swift in Sources */,
+				5B90F9E229BFB51200060308 /* Extension+CGFloat.swift in Sources */,
+				5BB0DAC229BBB10C0043E679 /* EPGConfigurator.swift in Sources */,
+				5B068E9329B9445D001F7625 /* tvosEPGApp.swift in Sources */,
+				5B92D76C29BD14D90060BF8E /* Extension+Date.swift in Sources */,
+				5BB0DAC929BBB2A60043E679 /* Program.swift in Sources */,
+				5BB0DABE29BBB0E00043E679 /* EPGView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5B068E9B29B9445E001F7625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		5B068E9C29B9445E001F7625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B068E9E29B9445E001F7625 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tvosEPG/Preview Content\"";
+				DEVELOPMENT_TEAM = 98PSNABYWA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mribouch.com.tvsandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		5B068E9F29B9445E001F7625 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tvosEPG/Preview Content\"";
+				DEVELOPMENT_TEAM = 98PSNABYWA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mribouch.com.tvsandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B068E8A29B9445D001F7625 /* Build configuration list for PBXProject "tvosEPG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B068E9B29B9445E001F7625 /* Debug */,
+				5B068E9C29B9445E001F7625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B068E9D29B9445E001F7625 /* Build configuration list for PBXNativeTarget "tvosEPG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B068E9E29B9445E001F7625 /* Debug */,
+				5B068E9F29B9445E001F7625 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B068E8729B9445D001F7625 /* Project object */;
+}
